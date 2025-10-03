@@ -36,7 +36,7 @@ const Services = () => {
       icon: 'fas fa-globe',
       title: 'Desarrollo Web',
       description: 'Aplicaciones web modernas y responsivas con las últimas tecnologías del mercado.',
-      technologies: ['React, Vue, Angular', 'Node.js, Python, PHP', 'Diseño responsive']
+      technologies: ['React, Vue', 'Node.js, Python', 'Diseño responsive']
     },
     {
       icon: 'fas fa-mobile-alt',
@@ -48,7 +48,7 @@ const Services = () => {
       icon: 'fas fa-desktop',
       title: 'Desarrollo de Escritorio',
       description: 'Aplicaciones de escritorio robustas y eficientes para Windows, Mac y Linux.',
-      technologies: ['Electron', '.NET, C#', 'Python, Java']
+      technologies: ['Electron', ' C#', 'Python, Java']
     },
     {
       icon: 'fas fa-microchip',

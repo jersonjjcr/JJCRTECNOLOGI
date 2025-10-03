@@ -33,7 +33,7 @@ const About = () => {
   const animateCounters = () => {
     const counters = [
       { target: 30, suffix: '+' },
-      { target: 3, suffix: '+' },
+      { target: 2, suffix: '+' },
       { target: 100, suffix: '%' }
     ]
 

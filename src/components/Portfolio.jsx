@@ -27,28 +27,32 @@ const Portfolio = () => {
 
   const projects = [
     {
+      icon: 'fas fa-chart-line',
+      title: 'FinApp',
+      description: 'Aplicación de gestión financiera para el control de flujo de caja y análisis financiero',
+      technologies: ['React', 'JavaScript', 'CSS'],
+      url: 'https://cashflow-178.preview.emergentagent.com/'
+    },
+    {
       icon: 'fas fa-calculator',
       title: 'NutriLab',
       description: 'Herramienta para calcular necesidades energéticas diarias con fórmulas Harris-Benedict y Mifflin-St Jeor',
-      technologies: ['React', 'JavaScript', 'CSS']
+      technologies: ['React', 'JavaScript', 'CSS'],
+      url: 'https://nutri-lab-rho.vercel.app/'
     },
     {
-      icon: 'fas fa-mobile-alt',
-      title: 'App de Delivery',
-      description: 'Aplicación móvil para delivery con geolocalización y pagos online',
-      technologies: ['React Native', 'Firebase', 'Stripe']
+      icon: 'fas fa-code',
+      title: 'AmbiCode',
+      description: 'Plataforma de desarrollo y programación con herramientas avanzadas',
+      technologies: ['React', 'Vercel', 'JavaScript'],
+      url: 'https://ambicode.vercel.app/'
     },
     {
-      icon: 'fas fa-chart-line',
-      title: 'Dashboard Analytics',
-      description: 'Panel de control con métricas en tiempo real y reportes avanzados',
-      technologies: ['Vue.js', 'Python', 'PostgreSQL']
-    },
-    {
-      icon: 'fas fa-graduation-cap',
-      title: 'Plataforma Educativa',
-      description: 'Sistema de gestión de aprendizaje con videoconferencias integradas',
-      technologies: ['Angular', 'WebRTC', 'AWS']
+      icon: 'fas fa-coffee',
+      title: 'CafeLado',
+      description: 'Sitio web para cafetería con sistema de pedidos y catálogo de productos',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      url: 'https://app.netlify.com/projects/cafelado/overview'
     }
   ]
 
@@ -77,6 +81,11 @@ const Portfolio = () => {
                     {project.technologies.map((tech, techIndex) => (
                       <span key={techIndex}>{tech}</span>
                     ))}
+                  </div>
+                  <div className="portfolio-link">
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
+                      <i className="fas fa-external-link-alt"></i> Ver Proyecto
+                    </a>
                   </div>
                 </div>
               </div>
