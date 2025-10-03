@@ -23,10 +23,8 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { icon: 'fab fa-linkedin', href: '#' },
     { icon: 'fab fa-github', href: '#' },
-    { icon: 'fab fa-twitter', href: '#' },
-    { icon: 'fab fa-instagram', href: '#' }
+    { icon: 'fab fa-instagram', href: 'https://www.instagram.com/jjcrtecnologi/' }
   ]
 
   return (
@@ -60,7 +58,12 @@ const Footer = () => {
             <h4>Síguenos</h4>
             <div className="social-links">
               {socialLinks.map((link, index) => (
-                <a key={index} href={link.href}>
+                <a 
+                  key={index} 
+                  href={link.href}
+                  target={link.href !== '#' ? '_blank' : '_self'}
+                  rel={link.href !== '#' ? 'noopener noreferrer' : ''}
+                >
                   <i className={link.icon}></i>
                 </a>
               ))}

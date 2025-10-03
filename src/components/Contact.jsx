@@ -66,24 +66,22 @@ const Contact = () => {
     {
       icon: 'fas fa-envelope',
       title: 'Email',
-      info: 'contacto@jjcrtecnologia.com'
+      info: 'jjcrtecnologi@gmail.com'
     },
     {
       icon: 'fas fa-phone',
       title: 'Teléfono',
-      info: '+1 (555) 123-4567'
+      info: '+57 3027532474'
     },
     {
       icon: 'fas fa-map-marker-alt',
       title: 'Ubicación',
-      info: 'Ciudad, País'
+      info: 'Sincelejo, Colombia'
     }
   ]
 
   const socialLinks = [
-    { icon: 'fab fa-linkedin', href: '#' },
-    { icon: 'fab fa-github', href: '#' },
-    { icon: 'fab fa-twitter', href: '#' }
+    { icon: 'fab fa-github', href: '#' }
   ]
 
   return (
